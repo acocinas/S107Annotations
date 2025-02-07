@@ -3,6 +3,8 @@ package com.level1.exercise1.model;
 import com.level1.exercise1.entities.*;
 
 public class Principal {
+
+    @SuppressWarnings("deprecation")//exercise2
     public static void runPrincipal() {
 
         double hours = 160;
@@ -15,5 +17,13 @@ public class Principal {
                 face2FaceWorker.calculateSalary(hours) + " €.");
         System.out.println("El sueldo de " + onlineWorker.getName() + " " + onlineWorker.getSurname() + " " + " es de " +
                 onlineWorker.calculateSalary(hours) + " €.");
+
+        //exercise2
+        System.out.println("\nUsando métodos obsoletos:");
+        System.out.println("El sueldo de " + face2FaceWorker.getName() + " " + face2FaceWorker.getSurname() + " " + " es de " +
+                face2FaceWorker.calculateSalaryNoGas(hours) + " €.");
+        System.out.println("El sueldo de " + onlineWorker.getName() + " " + onlineWorker.getSurname() + " " + " es de " +
+                onlineWorker.calculateSalaryNoInternet(hours) + " €.");
+
     }
 }

@@ -11,4 +11,9 @@ public class OnlineWorker extends Worker{
     public double calculateSalary(double hours){
         return super.calculateSalary(hours) + internetRate;
     }
+
+    @Deprecated //exercise2
+    public double calculateSalaryNoInternet(double hours){
+        return super.calculateSalary(hours);
+    }
 }

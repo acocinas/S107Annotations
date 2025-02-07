@@ -11,4 +11,9 @@ public class Face2FaceWorker extends Worker{
     public double calculateSalary(double hours){
         return super.calculateSalary(hours) + gas;
     }
+
+    @Deprecated  //exercise2
+    public double calculateSalaryNoGas(double hours){
+        return super.calculateSalary(hours);
+    }
 }
