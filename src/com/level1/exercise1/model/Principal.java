@@ -1,12 +1,11 @@
 package com.level1.exercise1.model;
 
-import com.level1.exercise1.entities.Face2FaceWorker;
-import com.level1.exercise1.entities.OnlineWorker;
+import com.level1.exercise1.entities.*;
 
 public class Principal {
     public static void runPrincipal() {
 
-        int hours = 160;
+        double hours = 160;
 
         Face2FaceWorker face2FaceWorker = new Face2FaceWorker("Ángel", "Peláez", 18.5);
 

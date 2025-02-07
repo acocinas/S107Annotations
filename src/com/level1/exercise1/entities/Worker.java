@@ -18,7 +18,7 @@ public class Worker {
         return surname;
     }
 
-    public double calculateSalary(int hours) {
+    public double calculateSalary(double hours) {
         return priceHour * hours;
     }
 }

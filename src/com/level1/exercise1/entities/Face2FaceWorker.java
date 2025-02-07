@@ -8,7 +8,7 @@ public class Face2FaceWorker extends Worker{
     }
 
     @Override
-    public double calculateSalary(int hours){
+    public double calculateSalary(double hours){
         return super.calculateSalary(hours) + gas;
     }
 }
